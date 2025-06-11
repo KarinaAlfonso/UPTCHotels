@@ -37,12 +37,12 @@ public class HotelWebReserve {
         Hotel hotel = hotelService.findHotel(nombreHotel, ciudad);
 
         if (hotel == null) {
-            model.addAttribute("mensaje", "❌ Hotel no encontrado.");
+            model.addAttribute("mensaje", "Hotel no encontrado.");
             return "registerreservation";
         }
 
         if (!hotel.isActive()) {
-            model.addAttribute("mensaje", "⚠️ El hotel está inactivo.");
+            model.addAttribute("mensaje", "El hotel está inactivo.");
             return "registerreservation";
         }
 
@@ -59,9 +59,9 @@ public class HotelWebReserve {
         boolean registrada = bookingService.registerBooking(reserva, hotel.getRoomCapacity());
 
         if (registrada) {
-            model.addAttribute("mensaje", "✅ Reserva registrada correctamente.");
+            model.addAttribute("mensaje", "Reserva registrada correctamente.");
         } else {
-            model.addAttribute("mensaje", "🚫 No hay habitaciones disponibles.");
+            model.addAttribute("mensaje", "No hay habitaciones disponibles.");
         }
 
         return "registerreservation";
