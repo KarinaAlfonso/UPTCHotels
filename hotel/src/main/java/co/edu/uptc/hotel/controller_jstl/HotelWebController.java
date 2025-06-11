@@ -45,9 +45,9 @@ public class HotelWebController {
     public String editarHotel(@ModelAttribute Hotel updatedHotel, Model model) {
         boolean updated = hotelService.editHotel(updatedHotel);
         if (updated) {
-            model.addAttribute("mensaje", "✏️ Hotel actualizado correctamente.");
+            model.addAttribute("mensaje", "Hotel actualizado correctamente.");
         } else {
-            model.addAttribute("mensaje", "⚠️ No se encontró el hotel a editar.");
+            model.addAttribute("mensaje", "⚠No se encontró el hotel a editar.");
         }
         return "editHotel"; 
     }
