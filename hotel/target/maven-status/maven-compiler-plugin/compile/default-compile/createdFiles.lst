@@ -1,0 +1,6 @@
+co\edu\uptc\hotel\model\Hotel.class
+co\edu\uptc\hotel\controller\HotelController.class
+co\edu\uptc\hotel\controller_jstl\MenuController.class
+co\edu\uptc\hotel\HotelApplication.class
+co\edu\uptc\hotel\controller\BookingController.class
+co\edu\uptc\hotel\model\Booking.class

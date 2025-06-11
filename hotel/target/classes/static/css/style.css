@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+/* === NAVBAR === */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  color: #1dc8cd;
+}
+
+.nav-left a {
+  font-size: 20px;
+  color: #1dc8cd;
+}
+
+/* === FORMULARIOS === */
+.form-container {
+  background: #ffffff;
+  width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #1dc8cd;
+  outline: none;
+  box-shadow: 0 0 5px rgba(29, 200, 205, 0.2);
+}
+
+.form-container input,
+.form-container select {
+  margin-bottom: 10px;
+}
+
+/* === BOTONES === */
+.btn {
+  background-color: #1dc8cd;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background-color: #17a2a6;
+  transform: translateY(-2px);
+}
+
+/* === PIE DE PÁGINA === */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 80px;
+  text-align: center;
+  color: #666;
+}
+
+/* === CONTENEDOR DE SELECCIÓN (menú principal) === */
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
