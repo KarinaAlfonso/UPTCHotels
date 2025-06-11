@@ -47,7 +47,7 @@ public class HotelWebController {
         if (updated) {
             model.addAttribute("mensaje", "Hotel actualizado correctamente.");
         } else {
-            model.addAttribute("mensaje", "⚠No se encontró el hotel a editar.");
+            model.addAttribute("mensaje", "No se encontró el hotel a editar.");
         }
         return "editHotel"; 
     }
@@ -67,8 +67,8 @@ public class HotelWebController {
                                  Model model) {
         boolean cambiado = hotelService.toggleStatus(name, city);
         model.addAttribute("mensaje", cambiado ?
-                "✅ Estado del hotel actualizado." :
-                "⚠️ Hotel no encontrado para cambiar estado.");
+                "Estado del hotel actualizado." :
+                "Hotel no encontrado para cambiar estado.");
         return "index"; 
     }
 }
